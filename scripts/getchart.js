@@ -167,16 +167,28 @@ function getCategoriesFromApi(event) {
     },
   };
 
-  var myArray = [];
+//   var myArray = [];
 
-  $.ajax(settings).done(function (response) {
-    myArray = response;
-    console.log(myArray);
-    buildChart(myArray);
-  });
-  event.preventDefault();
+//   $.ajax(settings).done(function (response) {
+//     myArray = response;
+//     console.log(myArray);
+//     buildChart(myArray);
+//   });
+//   event.preventDefault();
+// }
+
+// var myArray = [];
+console.log("calling API");
+
+// call API
+$.ajax(settings).done(function (response) {
+  myPlotData = response;
+  buildChart(myPlotData);
+  buildLegend(myPlotData);
+  console.log(myPlotData);
+});
+event.preventDefault();
 }
-
 
 function buildChart(data) {
   // set the dimensions and margins of the graph
