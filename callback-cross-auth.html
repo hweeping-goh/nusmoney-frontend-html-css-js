@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>callback-cross-auth</title>
+
+  <script src="https://cdn.auth0.com/js/auth0/9.0.0/auth0.min.js"></script>
+  <script type="text/javascript">
+    var auth0Client = new auth0.WebAuth({
+      domain: 'dev-gm18h6an80bx41d7.uk.auth0.com',
+      
+      clientID: 'dcTmugX5qW976T09Aqvp61Tj1nidTr5K'
+    });
+    auth0Client.crossOriginVerification();
+  </script>
+</head>
+
+<body></body>
+
+</html>
+
+<!-- callback-cross-auth.html VERSION#1-->
+<!--
+<head>
+    <script src="https://cdn.auth0.com/js/auth0/9.11/auth0.min.js"></script>
+    <script type="text/javascript">
+      var auth0Client = new auth0.WebAuth({
+        clientID: '{yourClientId}',
+        domain: '{yourDomain}'
+      });
+      auth0Client.crossOriginVerification();
+    </script>
+  </head>
+-->
+
+<!-- callback-cross-auth.html VERSION#2-->
+<!--
+<html>
+
+<head>
+  <script src="https://cdn.auth0.com/js/auth0/9.0.0/auth0.min.js"></script>
+  <script type="text/javascript">
+    var auth0Client = new auth0.WebAuth({
+      domain: 'brucke.auth0.com',
+      redirectUri: 'https://localhost:3000/support',
+      clientID: 'nj4hF7eaFFgt45b7brhUg8S8qewcVmYw'
+    });
+    auth0Client.crossOriginVerification();
+  </script>
+</head>
+
+<body></body>
+
+</html>
+-->
+
+
